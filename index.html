@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assents/imagens/icone.png" type="image/png">
+    <title>Coin Converter</title>
+</head>
+<body>
+    <main>
+
+    <div id="logoContainer">
+        <img id="logo" src="./assents/imagens/cifraoLogo.png" alt="Cifrão">
+    </div>
+
+    <div class="exibir">
+        <p class="info">Dólar: US$</p>
+        <p class="info">Euro: €</p>
+        <p class="info">Bitcoin: BTC</p>
+    </div>
+
+    <p class="text">DIGITE O VALOR QUE DESEJA CONVERTER PARA REAL</p>
+
+    <div id="inputCont">
+        <select name="MOEDA" id="moeda">
+            <option value="USD">DÓLAR</option>
+            <option value="EUR">EURO</option>
+            <option value="BTC">BITCOIN</option>
+        </select>
+        <input type="number" name="textArea" id="textArea" min="0" max="9999999">
+    </div>
+    <input type="button" value="CALCULAR" id="btn" onclick="cotar()">
+    
+    <div id="resultado"></div>
+    <script src="./script/script.js"></script>
+
+    </main>
+
+    <div id="logoGit">
+        <a href="https://github.com/Peaga05"><img src="./assents/imagens/GitHub.png" alt="GitHub"></a>
+    </div>
+    
+</body>
+</html>
